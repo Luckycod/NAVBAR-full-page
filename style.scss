@@ -1,0 +1,66 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.hero__page{
+    background-color: lightblue;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidenav{
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: all .3s ease;
+    padding-top: 6rem;
+
+ & a{
+    padding: 32px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #818181;
+    display: block;
+    text-align: center;
+    transition: all .3s ease;
+    cursor: pointer;
+
+    &:hover{
+        color: #f1f1f1;
+        transition: all .3s ease;
+    }
+ }
+
+ & .closebtn{
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 3.6rem;
+     margin-left: 5rem;
+ }
+}
+
+.openbtn{
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 5rem 2rem 0 0;
+}
